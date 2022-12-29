@@ -1,4 +1,7 @@
-# Twine + serial code
+# Twine scripts
+Une collection de scripts pour que Twine puisse parler avec d'autres appareils / applications etc.
+
+## Twine + serial code
  Transmission en série vers Twine / Serial communication with Twine
 
 ## C'est quoi donc ? *What it this* ?
@@ -17,12 +20,11 @@ De la documentation et un tutoriel sont disponibles sur le [blog de Google](http
 ![Source: site web de Pulse Sensor](https://cdn.shopify.com/s/files/1/0100/6632/files/PulseSensor_GettingAdvanced_bb_large.png?v=1511986194)
 <figcaption>Source: site web de Pulse Sensor, tutoriel <a href="https://pulsesensor.com/pages/getting-advanced">Getting (Calculating) BPM</a>.</figcaption>
 
-
 ## Todo
 
-- [ ] Compléter le ReadMe
-- [ ] Traduction en anglais
-- [ ] D'autres exemples et un tutoriel plus complet
+[ ] Compléter le ReadMe
+[ ] Traduction en anglais
+[ ] D'autres exemples et un tutoriel plus complet
 
 ## Thanks / remerciements
 
