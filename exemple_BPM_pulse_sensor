@@ -16,42 +16,45 @@
 </div>
     
     
-    <<script>>
+<<script>>
+    // Ce script est à mettre dans un passage (au complet) et non dans la
+    // section « Story Javascript ». 
+    // Je ne suis pas encore arrivée à le faire fonctionner dans cette section, 
    $(document).on(':passageend', function (ev) {
 
- let BPM = ""
-        const connectButton = document.querySelector('.connect-button')
-       
-        connectButton.addEventListener('click', function () {
-            getReader();
-            })
-  
+    let BPM = ""
+    const connectButton = document.querySelector('.connect-button')
+    
+    connectButton.addEventListener('click', function () {
+        getReader();
+        })
 
-        function renderBPM() {
-            const pulseColor = document.querySelector('.couleurBattements')
-            const bpmPercent = document.querySelector('.bpm')
-            bpmPercent.innerHTML = BPM
-            window.requestAnimationFrame(renderBPM)
-            pulseColor.style.backgroundColor = `rgb(0, ${BPM}, 0)`;
 
-        }
+    function renderBPM() {
+        const pulseColor = document.querySelector('.couleurBattements')
+        const bpmPercent = document.querySelector('.bpm')
+        bpmPercent.innerHTML = BPM
         window.requestAnimationFrame(renderBPM)
+        pulseColor.style.backgroundColor = `rgb(0, ${BPM}, 0)`;
 
-        async function getReader() {
-            console.log("function invoked")
-            const port = await navigator.serial.requestPort({})
-            await port.open({ baudRate: 115200 })
-            // code for button here to write later
+    }
+    window.requestAnimationFrame(renderBPM)
 
-            const apprendStream = new WritableStream({
-                write(chunk) {
-                    BPM = chunk
-                    console.log(chunk)
-                }
-            })
-            port.readable.pipeThrough(new TextDecoderStream())
-            .pipeTo(apprendStream)
-        }
+    async function getReader() {
+        console.log("function invoked")
+        const port = await navigator.serial.requestPort({})
+        await port.open({ baudRate: 115200 })
+        // code for button here to write later
+
+        const apprendStream = new WritableStream({
+            write(chunk) {
+                BPM = chunk
+                console.log(chunk)
+            }
+        })
+        port.readable.pipeThrough(new TextDecoderStream())
+        .pipeTo(apprendStream)
+    }
 
 });
-    <</script>>
+<</script>>
