@@ -1,10 +1,10 @@
-# Twine scripts
+# Twine scripts - repo in construction...
 Une collection de scripts pour que Twine puisse parler avec d'autres appareils / applications etc.
 
 ## Twine + serial code
  Transmission en série vers Twine / Serial communication with Twine
 
-## C'est quoi donc ? *What it this* ?
+## C'est quoi donc ? *What is this* ?
 
 Des morceaux de code qui donnent (au moins un) exemple de communication avec un navigateur via transmission en série. Cet exemple est adapté pour le format Sugarcube de Twine. Il permet, dans ce cas-ci, d'envoyer des signaux de battements de coeur encodés à partir d'un capteur connecté à un Arduino. Ces signaux sont disponibles via le [Web Serial API](https://github.com/WICG/serial/blob/main/EXPLAINER.md) pour les navigateurs Google Chrome, Chromium, Opera et Microsoft Edge ([pour le moment](https://caniuse.com/web-serial)).
 
