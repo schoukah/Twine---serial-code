@@ -1,5 +1,5 @@
 <div id="test_section_html">
-    <h1>Test d'affichange de mes battements de coeur</h1>
+    <h1>Test d'affichage de mes battements de coeur</h1>
     
         <div id="sectionAchanger">
             <h2>Bonjour!</h2>

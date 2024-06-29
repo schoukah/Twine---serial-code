@@ -12,7 +12,7 @@ De la documentation et un tutoriel sont disponibles sur le [blog de Google](http
 
 ## Matériel requis
 
-* Un Arduino (Uno utilisé dans ce cas-ci, mais allez-y avec ce que vous avez. N'importe quel microcontrolleur ou ordinateur monocarte — tel qu'un Raspberry Pi — capable de conversion de signaux analogiques à numériques et de transmission en série fera l'affaire).
+* Un Arduino (Uno utilisé dans ce cas-ci, mais allez-y avec ce que vous avez. N'importe quel microcontrôleur ou ordinateur monocarte — tel qu'un Raspberry Pi — capable de conversion de signaux analogiques à numériques et de transmission en série fera l'affaire).
 * Le [logiciel Twine](https://www.twinery.org) (application navigateur, pas testé sur l'application téléchargeable).
 * Un peu de patience et de détermination.
 * Un [capteur de battements de coeur](https://pulsesensor.com/) dans cette configuration:
